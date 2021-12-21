@@ -982,7 +982,8 @@ const words = [
 ];
 
 const getWord = () => {
-  return words[Math.random() * words.length];
+  const randomIndex = Math.floor(Math.random() * words.length);
+  return words[randomIndex];
 };
 
-export default { getWord };
+export default getWord;
