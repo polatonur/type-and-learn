@@ -31,6 +31,7 @@ function App() {
     const randomWord = getWord();
     setWord(randomWord);
   }, []);
+  console.log("true");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const typedWord = e.target.value;
